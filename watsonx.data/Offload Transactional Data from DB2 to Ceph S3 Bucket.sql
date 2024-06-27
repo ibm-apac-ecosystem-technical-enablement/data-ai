@@ -1,5 +1,5 @@
 -- Hands-on: Optimizing and Scaling On-Premise Data Engineering for BI Dashboards/Reports
--- Task 1: Offload transactional data (Sales transaction) from DB2 to Ceph S3 bucket
+-- Task 1: Offload Transactional Data from DB2 to Ceph S3 Bucket
 
 -- Sales Channel 1: Store Sales
 CREATE TABLE "ceph_retail"."sales"."store_sales" AS
