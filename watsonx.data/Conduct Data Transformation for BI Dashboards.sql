@@ -1,5 +1,5 @@
 -- Hands-on: Optimizing and Scaling On-Premise Data Engineering for BI Dashboards/Reports
--- Task 2: Conduct Data Transformation for BI Dashboards/Reports
+-- Task 2: Conduct Data Transformation for BI Dashboards
 
 -- Sales Channel 1: Store Sales
 CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ss3" AS
