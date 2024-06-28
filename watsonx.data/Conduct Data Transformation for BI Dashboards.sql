@@ -2,7 +2,7 @@
 -- Task 2: Conduct Data Transformation for BI Dashboards
 
 -- Sales Channel 1: Store Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ss3" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ss" AS
 SELECT
   d_year,
   d_qoy,
@@ -29,7 +29,7 @@ ORDER BY
   
   
 -- Sales Channel 2: Catalog Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_cs3" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_cs" AS
 SELECT
   d_year,
   d_qoy,
@@ -56,7 +56,7 @@ ORDER BY
 
   
 -- Sales Channel 3: Web Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ws3" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ws" AS
 SELECT
   d_year,
   d_qoy,
