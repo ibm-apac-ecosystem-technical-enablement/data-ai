@@ -1,4 +1,4 @@
--- Hands-on: Optimizing and Scaling On-Premise Data Engineering for BI Dashboards/Reports
+-- Hands-on: Optimizing and Scaling On-Premise Data Engineering for BI Dashboards
 -- Task 2: Conduct Data Transformation for BI Dashboards
 
 -- Sales Channel 1: Store Sales
