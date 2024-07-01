@@ -2,7 +2,7 @@
 -- Task 2: Conduct Data Transformation for BI Dashboards
 
 -- Sales Channel 1: Store Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ss" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ss_YOUR_NAME" AS
 SELECT
   d_year,
   d_qoy,
@@ -11,7 +11,7 @@ SELECT
   s_store_name,
   CAST(SUM(ss_sales_price) AS DECIMAL(7, 2)) AS ss_sales_price_total -- Sum the sales price and cast the result to DECIMAL(7, 2) for accurate representation
 FROM
-  "ceph_retail"."sales"."store_sales" AS store_sales_tbl
+  "ceph_retail"."sales"."store_sales_YOUR_NAME" AS store_sales_tbl
   INNER JOIN "hive_data"."sales_mst"."store" AS store_tbl ON store_sales_tbl.ss_store_sk = store_tbl.s_store_sk
   INNER JOIN "hive_data"."datetime_mst"."date_dim" AS date_tbl ON store_sales_tbl.ss_sold_date_sk = date_tbl.d_date_sk
 GROUP BY
@@ -29,7 +29,7 @@ ORDER BY
   
   
 -- Sales Channel 2: Catalog Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_cs" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_cs_YOUR_NAME" AS
 SELECT
   d_year,
   d_qoy,
@@ -38,7 +38,7 @@ SELECT
   cc_name,
   CAST(SUM(cs_sales_price) AS DECIMAL(7, 2)) AS cs_sales_price_total -- Sum the sales price and cast the result to DECIMAL(7, 2) for accurate representation
 FROM
-  "ceph_retail"."sales"."catalog_sales" AS catalog_sales_tbl
+  "ceph_retail"."sales"."catalog_sales_YOUR_NAME" AS catalog_sales_tbl
   INNER JOIN "hive_data"."sales_mst"."call_center" AS cc_tbl ON catalog_sales_tbl.cs_call_center_sk = cc_tbl.cc_call_center_sk
   INNER JOIN "hive_data"."datetime_mst"."date_dim" AS date_tbl ON catalog_sales_tbl.cs_sold_date_sk = date_tbl.d_date_sk
 GROUP BY
@@ -56,7 +56,7 @@ ORDER BY
 
   
 -- Sales Channel 3: Web Sales
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ws" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_ws_YOUR_NAME" AS
 SELECT
   d_year,
   d_qoy,
@@ -65,7 +65,7 @@ SELECT
   web_name,
   CAST(SUM(ws_sales_price) AS DECIMAL(7, 2)) AS ws_sales_price_total -- Sum the sales price and cast the result to DECIMAL(7, 2) for accurate representation
 FROM
-  "ceph_retail"."sales"."web_sales" AS web_sales_tbl
+  "ceph_retail"."sales"."web_sales_YOUR_NAME" AS web_sales_tbl
   INNER JOIN "hive_data"."sales_mst"."web_site" AS ws_tbl ON web_sales_tbl.ws_web_site_sk = ws_tbl.web_site_sk
   INNER JOIN "hive_data"."datetime_mst"."date_dim" AS date_tbl ON web_sales_tbl.ws_sold_date_sk = date_tbl.d_date_sk
 GROUP BY
