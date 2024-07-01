@@ -11,7 +11,7 @@ SELECT
   s_store_name AS channel_name,
   ss_sales_price_total AS sales_price_total
 FROM
-  "db2_retail"."bi_dashboard_sales"."sales_ss"
+  "db2_retail"."bi_dashboard_sales"."sales_ss_YOUR_NAME"
 UNION ALL
 SELECT
   d_year,
@@ -22,7 +22,7 @@ SELECT
   cc_name AS channel_name,
   cs_sales_price_total AS sales_price_total
 FROM
-  "db2_retail"."bi_dashboard_sales"."sales_cs"
+  "db2_retail"."bi_dashboard_sales"."sales_cs_YOUR_NAME"
 UNION ALL
 SELECT
   d_year,
@@ -33,4 +33,4 @@ SELECT
   web_name AS channel_name,
   ws_sales_price_total AS sales_price_total
 FROM
-  "db2_retail"."bi_dashboard_sales"."sales_ws4"
+  "db2_retail"."bi_dashboard_sales"."sales_ws_YOUR_NAME"
