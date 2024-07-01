@@ -1,7 +1,7 @@
 -- Hands-on: Optimizing and Scaling On-Premise Data Engineering for BI Dashboards
 -- Task 2: Concat all Sales Channel tables and create as a new table into DB2
 
-CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_channel" AS
+CREATE TABLE "db2_retail"."bi_dashboard_sales"."sales_channel_YOUR_NAME" AS
 SELECT
   d_year,
   d_qoy,
